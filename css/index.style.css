@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#splash-image {
+    background-image: url('../picstorage/andrej-lisakov-568525-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.header {
+    margin-bottom: 0;
+}
+
+#lunch {
+    background-image: url("../picstorage/fancycrave-152531-unsplash.jpg")
+}
+
+#discbot {
+    background-image: url("../picstorage/luana-de-marco-666185-unsplash.jpg");
+}
+
+#soundboard {
+    background-image: url("../picstorage/steve-harvey-701351-unsplash.jpg");
+}
+
+#datavilij {
+    background-image: url("../picstorage/graph.png");
+}
+
+#MIPS {
+    background-image: url("../picstorage/vi-edit.png");
+}
+
+.project {
+    background-size: cover;
+}

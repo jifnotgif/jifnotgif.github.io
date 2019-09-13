@@ -1,0 +1,195 @@
+
+
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:visible;
+}
+
+.text{
+    display:inline-block;
+    width:100%; 
+    overflow:hidden;
+}
+
+.facts{
+    list-style-type: circle;
+}
+
+/* Header **/
+header{
+  background:#000000;
+  color:#ffffff;
+  padding-top:1.875em;
+  min-height:4.375em;
+  border-bottom:#E30000 0.188em solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 1.25em 0 1.25em;
+}
+
+
+header nav{
+  float:right;
+  margin-top:0.625em;
+  margin:0;
+  padding:0;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+}
+
+/* Showcase */
+#showcase{
+    
+    min-height: 25em;
+    background: #202020;
+    text-align: left;
+    color: #ffffff;
+}
+
+#showcase h1{
+    float:left;
+    font-size: 55px;
+    color: #E30000;
+    padding: .5em;
+    margin: 1em 0.313em .625em 0.313em;
+}
+
+.contents{
+    padding:1em;
+    background: #757575;
+    color:#ffffff;
+    border:1px solid #ffffff;
+    width:90%;
+    margin-left:3em;
+}
+
+.contents a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#education{
+    width:100%;
+}
+.dates{
+    text-align: right;
+    
+}
+#footer1{
+    box-shadow: 0px 500px 0px 500px #202020;
+}
+
+.projects{
+    list-style-type: none;
+}
+.projects a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.project{
+    background-color: black;
+    background-size:cover;
+    width: 15.625em;
+    height: 15.625em;
+    padding: 10px;
+    margin:5px;
+    display:inline;
+    float:left;
+    overflow:hidden;
+    position: relative;
+    
+}
+
+.project h2{
+    padding:0;
+    margin:0;
+    position:relative;
+    z-index: 1;
+
+}
+.description{
+    text-shadow:2px 2px #000;
+    position:relative;
+    z-index: 1;
+    opacity:0;
+}
+
+.image {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    opacity: 1; 
+}
+
+/* Media Queries */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .grid{
+        display:grid;
+    }
+    body{
+        font: 14px/1.5 Arial, Helvetica,sans-serif;
+    }
+    
+    header{
+        padding-top:1.875vh;
+        padding-left:1vw;
+    }
+    header li{
+      display:flex;
+      float:none;
+      padding: 0 1.25vw 0 1.25vw;
+    }
+
+    header nav{
+        width:100vw;
+    }
+    #showcase h1{
+        font-size: 35px;
+        padding: .625vh 0.938vw .625vh 0.313vw;
+        margin: 1vh 0.313vw .625vh 0.313vw;
+    }
+    #showcase p, #showcase table{
+        width:70vw;
+        padding:10px;
+    }
+    .contents{
+        margin-left:0em;
+    }   
+
+    .project{
+        width: 50vw;
+        height:25vh;
+    }
+}
+
